@@ -1,3 +1,4 @@
+
 /* Reset and base styles */
 * {
   margin: 0;
@@ -184,4 +185,190 @@ section#skills ul li {
   width: 50%;
 }
 
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section layout: fullscreen style */
+section {
+  min-height: 100vh;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* left align content */
+  border-bottom: 2px solid #ccc;
+  background-color: #fff;
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* About section image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  align-self: center; /* image display*/
+}
+
+.description {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+h1, h2, h3 {
+  color: #444;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 1.3em;
+  color: #222;
+}
+
+p {
+  margin: 10px 0;
+  color: #444;
+}
+
+/* Experience Section Specific */
+section#experience p {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+section#experience ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+section#experience ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Skills Section */
+section#skills ul {
+  padding-left: 20px;
+}
+
+section#skills ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #333;
+  color: #fff;
+}
+
+.contact-section p {
+  margin: 10px 0;
+}
+
+/* Responsive (optional) */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main footer */
+.main-footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 20px;
+  border-top: 2px solid #444;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.main-footer h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.main-footer p {
+  margin: 4px 0;
+}
+
+.main-footer hr {
+  border: 0;
+  border-top: 1px solid #555;
+  margin: 10px auto;
+  width: 50%;
+}
 
